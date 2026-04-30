@@ -263,51 +263,125 @@
 /* ── Responsive ── */
 @media (max-width: 900px) {
   .hero {
-    flex-direction: column;
-    padding: 56px 24px 72px;
-    gap: 48px;
+    flex-direction: column-reverse;
+    padding: 48px 24px 64px;
+    gap: 40px;
     text-align: center;
   }
 
-  .heroTitle {
-    font-size: 38px;
+  .heroContent {
+    align-items: center;
   }
 
-  .badge {
-    align-self: center;
+  .heroTitle {
+    font-size: 36px;
+    letter-spacing: -1px;
   }
 
   .heroSubtitle {
-    max-width: 100%;
+    max-width: 520px;
   }
 
   .heroActions {
     justify-content: center;
   }
 
+  .phoneFrame {
+    width: min(260px, 70vw);
+  }
+
   .featuresGrid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .features {
+    padding: 64px 24px;
+  }
+
+  .sectionHeader {
+    margin-bottom: 40px;
+  }
+
+  .cta {
+    padding: 64px 24px;
+  }
+
+  .ctaTitle {
+    font-size: 32px;
+  }
+
+  .ctaSubtitle {
+    font-size: 16px;
   }
 }
 
 @media (max-width: 600px) {
+  .hero {
+    padding: 40px 20px 56px;
+    gap: 32px;
+  }
+
   .heroTitle {
-    font-size: 30px;
+    font-size: 28px;
+    letter-spacing: -0.5px;
+  }
+
+  .heroSubtitle {
+    font-size: 16px;
+  }
+
+  .storeBtn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .phoneFrame {
+    width: min(240px, 80vw);
   }
 
   .featuresGrid {
     grid-template-columns: 1fr;
+    gap: 12px;
   }
 
   .featureCard {
-    padding: 20px;
+    padding: 18px 16px;
+    gap: 14px;
+  }
+
+  .featureIconWrap {
+    width: 40px;
+    height: 40px;
+    border-radius: 11px;
+  }
+
+  .features {
+    padding: 48px 20px;
   }
 
   .sectionTitle {
-    font-size: 28px;
+    font-size: 26px;
+  }
+
+  .sectionSubtitle {
+    font-size: 15px;
+  }
+
+  .cta {
+    padding: 56px 20px;
   }
 
   .ctaTitle {
-    font-size: 28px;
+    font-size: 26px;
+    letter-spacing: -0.5px;
+  }
+
+  .ctaSubtitle {
+    font-size: 15px;
+  }
+
+  .storeBtnLight {
+    width: 100%;
+    justify-content: center;
   }
 }
