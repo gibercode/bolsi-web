@@ -9,7 +9,6 @@ export default function Navbar() {
       <div className={styles.container}>
         <Link to="/" className={styles.logo}>
           <img src="/bolsi-icon.png" alt="Bolsi" className={styles.logoIcon} />
-          <span className={styles.logoText}>Bolsi</span>
         </Link>
         <div className={styles.links}>
           <a href="#features" className={styles.link}>Funciones</a>

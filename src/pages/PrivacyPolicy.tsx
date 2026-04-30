@@ -60,7 +60,7 @@ No debes utilizar las tasas mostradas en Bolsi para transacciones financieras of
     title: '6. Privacidad de menores',
     content: `Bolsi no está diseñada para niños menores de 13 años y no recopila conscientemente información personal de menores.
 
-Si eres padre o tutor y crees que tu hijo ha proporcionado información personal, contáctanos en privacidad@bolsi.app y tomaremos medidas para eliminarla de inmediato.`,
+Si eres padre o tutor y crees que tu hijo ha proporcionado información personal, contáctanos y tomaremos medidas para eliminarla de inmediato.`,
   },
   {
     title: '7. Tus derechos',
@@ -72,7 +72,7 @@ Si eres padre o tutor y crees que tu hijo ha proporcionado información personal
 • Oponerte al procesamiento de tus datos
 • Portabilidad de datos
 
-Para ejercer cualquiera de estos derechos, contáctanos en privacidad@bolsi.app. Responderemos a tu solicitud en un plazo máximo de 30 días.`,
+Para ejercer cualquiera de estos derechos, contáctanos a través de la app. Responderemos a tu solicitud en un plazo máximo de 30 días.`,
   },
   {
     title: '8. Cambios a esta política',
@@ -85,10 +85,7 @@ Te recomendamos revisar esta política periódicamente. El uso continuo de Bolsi
   },
   {
     title: '9. Contacto',
-    content: `Si tienes preguntas, comentarios o inquietudes sobre esta Política de Privacidad o el manejo de tus datos, puedes contactarnos:
-
-Correo electrónico: privacidad@bolsi.app
-Tiempo de respuesta: máximo 5 días hábiles
+    content: `Si tienes preguntas, comentarios o inquietudes sobre esta Política de Privacidad o el manejo de tus datos, puedes contactarnos a través de la aplicación.
 
 Nos comprometemos a responder todas tus consultas y a trabajar contigo para resolver cualquier preocupación sobre tu privacidad.`,
   },
@@ -128,12 +125,7 @@ export default function PrivacyPolicy() {
         </div>
 
         <footer className={styles.footer}>
-          <p>
-            ¿Tienes preguntas?{' '}
-            <a href="mailto:privacidad@bolsi.app" className={styles.emailLink}>
-              privacidad@bolsi.app
-            </a>
-          </p>
+          <p>¿Tienes preguntas? Contáctanos a través de la aplicación.</p>
         </footer>
       </div>
     </div>
