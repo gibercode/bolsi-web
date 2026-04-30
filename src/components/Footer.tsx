@@ -19,7 +19,7 @@ export default function Footer() {
           <a href="#features" className={styles.link}>Funciones</a>
           <a href="#download" className={styles.link}>Descargar</a>
         </div>
-        <p className={styles.copy}>© {new Date().getFullYear()} Bolsi. Todos los derechos reservados.</p>
+        <p className={styles.copy}>© {new Date().getFullYear()} Bolsi.</p>
       </div>
     </footer>
   )
