@@ -83,26 +83,11 @@ export default function Home() {
         </div>
         <div className={styles.heroVisual}>
           <div className={styles.phoneFrame}>
-            <div className={styles.phoneScreen}>
-              <div className={styles.mockRate}>
-                <span className={styles.mockRateLabel}>Dólar paralelo</span>
-                <span className={styles.mockRateValue}>Bs. 48.50</span>
-                <span className={styles.mockRateDelta}>+0.3% hoy</span>
-              </div>
-              <div className={styles.mockCurrencies}>
-                {[
-                  { flag: '🇺🇸', code: 'USD', rate: '1.00' },
-                  { flag: '🇪🇺', code: 'EUR', rate: '1.09' },
-                  { flag: '₮', code: 'USDT', rate: '1.01' },
-                  { flag: '🇻🇪', code: 'VEF', rate: '0.020' },
-                ].map(c => (
-                  <div key={c.code} className={styles.mockCurrencyRow}>
-                    <span>{c.flag} {c.code}</span>
-                    <span className={styles.mockCurrencyRate}>{c.rate}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
+            <img
+              src="/app-screenshot.png"
+              alt="Bolsi app — pantalla principal"
+              className={styles.appScreenshot}
+            />
           </div>
           <div className={styles.phoneShadow} />
         </div>
