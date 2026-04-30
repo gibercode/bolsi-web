@@ -7,7 +7,7 @@ export default function Footer() {
       <div className={styles.container}>
         <div className={styles.brand}>
           <div className={styles.logo}>
-            <span className={styles.logoIcon}>₿</span>
+            <img src="/bolsi-icon.png" alt="Bolsi" className={styles.logoIcon} />
             <span>Bolsi</span>
           </div>
           <p className={styles.tagline}>

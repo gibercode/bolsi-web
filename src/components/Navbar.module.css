@@ -27,15 +27,10 @@
 }
 
 .logoIcon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 36px;
   height: 36px;
-  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
   border-radius: 10px;
-  color: white;
-  font-size: 16px;
+  object-fit: contain;
 }
 
 .logoText {

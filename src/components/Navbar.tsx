@@ -8,7 +8,7 @@ export default function Navbar() {
     <nav className={styles.nav}>
       <div className={styles.container}>
         <Link to="/" className={styles.logo}>
-          <span className={styles.logoIcon}>₿</span>
+          <img src="/bolsi-icon.png" alt="Bolsi" className={styles.logoIcon} />
           <span className={styles.logoText}>Bolsi</span>
         </Link>
         <div className={styles.links}>

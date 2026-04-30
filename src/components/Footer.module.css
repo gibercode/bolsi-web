@@ -30,14 +30,11 @@
 }
 
 .logoIcon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 32px;
   height: 32px;
-  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
   border-radius: 8px;
-  font-size: 14px;
+  object-fit: contain;
+  background: white;
 }
 
 .tagline {
