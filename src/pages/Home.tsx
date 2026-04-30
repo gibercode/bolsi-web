@@ -6,8 +6,19 @@ import {
   WifiOff,
   Share2,
 } from 'lucide-react'
-import { FaGooglePlay } from 'react-icons/fa'
 import styles from './Home.module.css'
+
+function GooglePlayIcon({ size = 20 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1.5 1.5L12.75 12.75L1.5 24C1.2 23.85 1 23.55 1 23.2V1.8C1 1.45 1.2 1.15 1.5 1.5Z" fill="#32BBFF"/>
+      <path d="M17.25 8.25L13.5 12L1.5 1.5C1.8 1.2 2.2 1.15 2.55 1.35L17.25 8.25Z" fill="#32BBFF"/>
+      <path d="M22.5 12C22.5 12.6 22.15 13.1 21.65 13.4L18.75 14.95L14.75 12L18.75 8.95L21.65 10.6C22.15 10.9 22.5 11.4 22.5 12Z" fill="#FFD400"/>
+      <path d="M13.5 12L17.25 15.75L2.55 22.65C2.2 22.85 1.8 22.8 1.5 22.5L13.5 12Z" fill="#FF3333"/>
+      <path d="M17.25 8.25L13.5 12L1.5 1.5C1.8 1.2 2.2 1.15 2.55 1.35L17.25 8.25Z" fill="#00CF44" opacity="0.9"/>
+    </svg>
+  )
+}
 
 const features = [
   {
@@ -76,7 +87,7 @@ export default function Home() {
               rel="noreferrer"
               className={styles.storeBtn}
             >
-              <FaGooglePlay size={20} />
+              <GooglePlayIcon size={20} />
               Descargar en Google Play
             </a>
           </div>
@@ -127,7 +138,7 @@ export default function Home() {
             Únete a miles de usuarios que ya controlan su economía con Bolsi.
           </p>
           <a href="https://play.google.com" target="_blank" rel="noreferrer" className={styles.storeBtnLight}>
-            <FaGooglePlay size={18} />
+            <GooglePlayIcon size={18} />
             Descargar en Google Play
           </a>
         </div>
