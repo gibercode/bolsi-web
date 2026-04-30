@@ -59,12 +59,3 @@
 .link:hover {
   color: white;
 }
-
-.copy {
-  font-size: 13px;
-  color: var(--text-muted);
-  border-top: 1px solid #2D3748;
-  padding-top: 24px;
-  width: 100%;
-  text-align: center;
-}
