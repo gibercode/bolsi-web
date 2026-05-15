@@ -6,7 +6,19 @@ import {
   WifiOff,
   Share2,
 } from 'lucide-react'
+import { motion } from 'motion/react'
 import styles from './Home.module.css'
+import { Reveal } from '../components/Reveal'
+
+const heroEase = [0.16, 1, 0.3, 1] as const
+function heroVariant(delay: number) {
+  return {
+    initial: { opacity: 0, y: 48 },
+    whileInView: { opacity: 1, y: 0 },
+    viewport: { once: true },
+    transition: { duration: 0.9, delay, ease: heroEase },
+  }
+}
 
 function GooglePlayIcon({ size = 20 }: { size?: number }) {
   return (
@@ -67,16 +79,18 @@ export default function Home() {
       {/* Hero */}
       <section className={styles.hero}>
         <div className={styles.heroContent}>
-          <div className={styles.badge}>Disponible para Android</div>
-          <h1 className={styles.heroTitle}>
-            Tu billetera inteligente para el{' '}
+          <motion.div {...heroVariant(0)}>
+            <div className={styles.badge}>Disponible para Android</div>
+          </motion.div>
+          <motion.h1 className={styles.heroTitle} {...heroVariant(0.1)}>
+            Tu calculadora inteligente para el{' '}
             <span className={styles.highlight}>control de cambio</span>
-          </h1>
-          <p className={styles.heroSubtitle}>
+          </motion.h1>
+          <motion.p className={styles.heroSubtitle} {...heroVariant(0.18)}>
             Bolsi te ayuda a manejar tus compras, convertir divisas y seguir el
             tipo de cambio en Venezuela — todo en una sola app, sin complicaciones.
-          </p>
-          <div className={styles.heroActions} id="download">
+          </motion.p>
+          <motion.div className={styles.heroActions} id="download" {...heroVariant(0.26)}>
             <a
               href="https://play.google.com"
               target="_blank"
@@ -86,9 +100,15 @@ export default function Home() {
               <GooglePlayIcon size={20} />
               Descargar en Google Play
             </a>
-          </div>
+          </motion.div>
         </div>
-        <div className={styles.heroVisual}>
+        <motion.div
+          className={styles.heroVisual}
+          initial={{ opacity: 0, x: 70, scale: 0.95 }}
+          whileInView={{ opacity: 1, x: 0, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.0, delay: 0.18, ease: heroEase }}
+        >
           <div className={styles.phoneFrame}>
             <img
               src="/app-screenshot.png"
@@ -97,30 +117,32 @@ export default function Home() {
             />
           </div>
           <div className={styles.phoneShadow} />
-        </div>
+        </motion.div>
       </section>
 
       {/* Features */}
       <section className={styles.features} id="features">
         <div className={styles.sectionContainer}>
-          <div className={styles.sectionHeader}>
+          <Reveal className={styles.sectionHeader}>
             <span className={styles.sectionBadge}>Funcionalidades</span>
             <h2 className={styles.sectionTitle}>Todo lo que necesitas en una sola app</h2>
             <p className={styles.sectionSubtitle}>
               Diseñada para los venezolanos que manejan múltiples monedas en su día a día.
             </p>
-          </div>
+          </Reveal>
           <div className={styles.featuresGrid}>
-            {features.map(({ Icon, color, bg, title, description }) => (
-              <div key={title} className={styles.featureCard}>
-                <div className={styles.featureIconWrap} style={{ background: bg }}>
-                  <Icon size={22} color={color} strokeWidth={2} />
+            {features.map(({ Icon, color, bg, title, description }, i) => (
+              <Reveal key={title} delay={i * 0.07} style={{ height: '100%' }}>
+                <div className={styles.featureCard}>
+                  <div className={styles.featureIconWrap} style={{ background: bg }}>
+                    <Icon size={22} color={color} strokeWidth={2} />
+                  </div>
+                  <div>
+                    <h3 className={styles.featureTitle}>{title}</h3>
+                    <p className={styles.featureDesc}>{description}</p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className={styles.featureTitle}>{title}</h3>
-                  <p className={styles.featureDesc}>{description}</p>
-                </div>
-              </div>
+              </Reveal>
             ))}
           </div>
         </div>
@@ -128,7 +150,7 @@ export default function Home() {
 
       {/* CTA */}
       <section className={styles.cta}>
-        <div className={styles.ctaContent}>
+        <Reveal className={styles.ctaContent}>
           <h2 className={styles.ctaTitle}>Descarga Bolsi hoy, es gratis</h2>
           <p className={styles.ctaSubtitle}>
             Únete a miles de usuarios que ya controlan su economía con Bolsi.
@@ -137,7 +159,7 @@ export default function Home() {
             <GooglePlayIcon size={18} />
             Descargar en Google Play
           </a>
-        </div>
+        </Reveal>
       </section>
     </div>
   )

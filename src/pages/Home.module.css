@@ -179,6 +179,8 @@
   flex-direction: row;
   align-items: flex-start;
   gap: 18px;
+  height: 100%;
+  box-sizing: border-box;
   transition: box-shadow 0.25s, transform 0.25s, border-color 0.25s;
 }
 
