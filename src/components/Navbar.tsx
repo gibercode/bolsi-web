@@ -16,12 +16,12 @@ export default function Navbar() {
             <>
               <a href="#features" className={styles.link}>Funciones</a>
               <Link to="/privacy" className={styles.link}>Privacidad</Link>
-              <a href="#download" className={styles.cta}>Descargar gratis</a>
+              <a href="https://play.google.com/store/apps/details?id=com.gibercode.bolsi" target="_blank" rel="noreferrer" className={styles.cta}>Descargar gratis</a>
             </>
           ) : (
             <>
               <Link to="/" className={styles.link}>Inicio</Link>
-              <a href="/#download" className={styles.cta}>Descargar gratis</a>
+              <a href="https://play.google.com/store/apps/details?id=com.gibercode.bolsi" target="_blank" rel="noreferrer" className={styles.cta}>Descargar gratis</a>
             </>
           )}
         </div>

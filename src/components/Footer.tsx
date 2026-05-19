@@ -25,7 +25,7 @@ export default function Footer() {
           <a href="#features" className={styles.link}>
             Funciones
           </a>
-          <a href="#download" className={styles.link}>
+          <a href="https://play.google.com/store/apps/details?id=com.gibercode.bolsi" target="_blank" rel="noreferrer" className={styles.link}>
             Descargar
           </a>
         </div>

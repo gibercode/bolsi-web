@@ -92,7 +92,7 @@ export default function Home() {
           </motion.p>
           <motion.div className={styles.heroActions} id="download" {...heroVariant(0.26)}>
             <a
-              href="https://play.google.com"
+              href="https://play.google.com/store/apps/details?id=com.gibercode.bolsi"
               target="_blank"
               rel="noreferrer"
               className={styles.storeBtn}
@@ -155,7 +155,7 @@ export default function Home() {
           <p className={styles.ctaSubtitle}>
             Únete a miles de usuarios que ya controlan su economía con Bolsi.
           </p>
-          <a href="https://play.google.com" target="_blank" rel="noreferrer" className={styles.storeBtnLight}>
+          <a href="https://play.google.com/store/apps/details?id=com.gibercode.bolsi" target="_blank" rel="noreferrer" className={styles.storeBtnLight}>
             <GooglePlayIcon size={18} />
             Descargar en Google Play
           </a>
