@@ -60,3 +60,11 @@
 .link:hover {
   color: white;
 }
+
+@media (max-width: 600px) {
+  .links {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+}
