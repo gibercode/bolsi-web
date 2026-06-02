@@ -28,25 +28,6 @@ function GooglePlayIcon({ size = 20 }: { size?: number }) {
   )
 }
 
-function PlayStoreMini({ href }: { href: string }) {
-  return (
-    <a href={href} target="_blank" rel="noreferrer" className={styles.playStoreMini}>
-      <div className={styles.psIconWrap}>
-        <GooglePlayIcon size={15} />
-      </div>
-      <div className={styles.psInfo}>
-        <span className={styles.psName}>Bolsi · Google Play</span>
-        <span className={styles.psMeta}>
-          <span className={styles.psStars}>★★★★★</span>
-          <span className={styles.psFree}>Gratis</span>
-        </span>
-      </div>
-      <svg className={styles.psArrow} width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-        <path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-      </svg>
-    </a>
-  )
-}
 
 type FeatureSize = 'normal' | 'wide' | 'full'
 
