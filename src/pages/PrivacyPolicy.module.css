@@ -16,17 +16,24 @@
   gap: 16px;
 }
 
-.badge {
-  display: inline-flex;
-  align-self: flex-start;
-  background: var(--primary-light);
-  color: var(--primary);
-  font-size: 12px;
-  font-weight: 700;
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  padding: 6px 14px;
-  border-radius: 100px;
+  color: var(--primary);
+}
+
+.eyebrowLine {
+  display: block;
+  width: 24px;
+  height: 1.5px;
+  background: var(--primary);
+  flex-shrink: 0;
+  border-radius: 2px;
 }
 
 .title {

@@ -25,8 +25,9 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
+  letter-spacing: -0.2px;
 }
 
 .logoIcon {
@@ -34,13 +35,13 @@
   height: 32px;
   border-radius: 8px;
   object-fit: contain;
-  background: white;
 }
 
 .tagline {
   font-size: 14px;
   color: var(--text-muted);
   max-width: 320px;
+  line-height: 1.6;
 }
 
 .links {

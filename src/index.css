@@ -20,6 +20,7 @@
   --warning: #F59E0B;
   --error: #EF4444;
   --border: #E5E7EB;
+  --border-strong: #D1D5DB;
   --shadow: 0 4px 6px -1px rgba(0,0,0,0.07), 0 2px 4px -1px rgba(0,0,0,0.04);
   --shadow-lg: 0 20px 25px -5px rgba(0,0,0,0.08), 0 10px 10px -5px rgba(0,0,0,0.04);
 }
@@ -31,6 +32,7 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: clip;
 }
 
 #root {

@@ -9,7 +9,8 @@ export default function Navbar() {
     <nav className={styles.nav}>
       <div className={styles.container}>
         <Link to="/" className={styles.logo}>
-          <img src="/bolsi-icon.png" alt="Bolsi" className={styles.logoIcon} />
+          <img src="/bolsi-icon.png" alt="" className={styles.logoIcon} />
+          <span>Bolsi</span>
         </Link>
         <div className={styles.links}>
           {isHome ? (

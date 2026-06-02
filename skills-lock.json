@@ -1,11 +1,35 @@
 {
   "version": 1,
   "skills": {
+    "anti-slop": {
+      "source": "rand/cc-polymath",
+      "sourceType": "github",
+      "skillPath": "skills/anti-slop/SKILL.md",
+      "computedHash": "0800335799f745c475640bec46c3c57a80ef5025574035d129ec2d5c1cb6847f"
+    },
+    "design-taste-frontend": {
+      "source": "leonxlnx/taste-skill",
+      "sourceType": "github",
+      "skillPath": "skills/taste-skill/SKILL.md",
+      "computedHash": "6d838b246d0e35d0b53f4f23f98ba7a1dd561937e64f7d0c7553b0928e376c3e"
+    },
     "frontend-design": {
       "source": "anthropics/skills",
       "sourceType": "github",
       "skillPath": "skills/frontend-design/SKILL.md",
       "computedHash": "063a0e6448123cd359ad0044cc46b0e490cc7964d45ef4bb9fd842bd2ffbca67"
+    },
+    "product-frontend-design": {
+      "source": "mosif16/codex-skills",
+      "sourceType": "github",
+      "skillPath": "skills/frontend-design/SKILL.md",
+      "computedHash": "b0252585b30e162311add15f1ce517b2274d7a7b3ffd1f1c86c6f1af5f9b4e04"
+    },
+    "web-artifacts-builder": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "skillPath": "skills/web-artifacts-builder/SKILL.md",
+      "computedHash": "d52d422ead3fa26859a6af129609841a8536b230a2d649f86e61771d063e05e2"
     }
   }
 }

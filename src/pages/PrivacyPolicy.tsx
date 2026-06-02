@@ -96,7 +96,10 @@ export default function PrivacyPolicy() {
     <div className={styles.page}>
       <div className={styles.container}>
         <header className={styles.header}>
-          <div className={styles.badge}>Legal</div>
+          <div className={styles.eyebrow}>
+            <span className={styles.eyebrowLine} />
+            <span>Legal</span>
+          </div>
           <h1 className={styles.title}>Política de Privacidad</h1>
           <p className={styles.subtitle}>
             En Bolsi tomamos tu privacidad muy en serio. Esta política explica qué
