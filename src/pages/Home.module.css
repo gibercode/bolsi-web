@@ -530,7 +530,7 @@
 /* ── 960px: tablet ── */
 @media (max-width: 960px) {
   .heroInner {
-    flex-direction: column-reverse;
+    flex-direction: column;
     padding: 52px 24px 68px;
     gap: 40px;
     text-align: center;
