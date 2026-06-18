@@ -1,0 +1,9 @@
+services:
+  bolsi-web:
+    build:
+      context: .
+    image: bolsi-web:latest
+    container_name: bolsi-web
+    restart: unless-stopped
+    ports:
+      - "${APP_PORT:-8080}:80"
